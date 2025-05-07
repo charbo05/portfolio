@@ -3,6 +3,16 @@ import "./src/styles/global.css";
 import Header from "../components/Header.astro";
 // Supports weights 100-900
 import "@fontsource-variable/onest";
+
+interface Props {
+	// The slot is the content that will be passed to the layout
+	// This is a special prop that Astro uses to render the content of the page
+	// You can use it to pass any content you want to the layout
+	// For example, you can pass a component
+	title: string;
+	}
+const { title } = Astro.props as Props;
+// This is the layout component that will be used to wrap all the pages
 ---
 
 <!doctype html>
@@ -31,6 +41,7 @@ import "@fontsource-variable/onest";
 	body {
 		background: #050505;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		min-height: 100vh;
 	}
