@@ -2,6 +2,8 @@
 import Badge from "../components/Badge.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import LinkedIn from "../iconos/LinkedIn.astro";
+import Github from "../iconos/Github.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -10,7 +12,7 @@ import "../styles/global.css";
 <Layout title=" welcome">
     <main>
         <section
-            class="flex flex-col items-center justify-center min-h-screen text-white text-center bg-black px-4"
+            class="flex flex-col items-center justify-center min-h-screen text-white text-center px-4"
         >
             <h1
                 class="text-4xl font-bold text-white text-5xl flex justify-center items-center flex-row gap-x-4"
@@ -24,17 +26,23 @@ import "../styles/global.css";
                     <Badge>Escucho Ofertas de trabajo</Badge>
                 </a>
             </h1>
-            <h2
-                class="text-2xl font-bold text-white mt-4 opacity-80 break-words"
-            >
+            <h2 class="text-2xl text-wrap">
                 <span>Analista en Tecnologías de la Información</span>
-                <span class="opacity-80 text-red-100/50">
+                <span class="opacity-80 text-red-200/90">
                     ORT Uruguay. De Uruguay, Montevideo.
                 </span>
-                <span class="text-red-100/50">
+                <span class="text-yellow-200/90">
                     Trabajo en soluciones de software.
                 </span>
             </h2>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/maxich/">
+                        <LinkedIn class="w-6 h-6" />
+                        linkedin
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
 </Layout>
