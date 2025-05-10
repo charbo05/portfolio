@@ -4,12 +4,17 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import LinkedIn from "../iconos/LinkedIn.astro";
 import Github from "../iconos/Github.astro";
+import Sociales from "../iconos/Sociales.astro";
+import Mail from "../iconos/Mail.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title=" welcome">
+<Layout
+    title=" Portfolio de Christian -Desarrollador, Programador Analista en TI"
+    description="Portfolio de Christian -Desarrollador, Programador Analista en TI"
+>
     <main>
         <section
             class="flex flex-col items-center justify-center min-h-screen text-white text-center px-4"
@@ -35,14 +40,21 @@ import Github from "../iconos/Github.astro";
                     Trabajo en soluciones de software.
                 </span>
             </h2>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/maxich/">
-                        <LinkedIn class="w-6 h-6" />
-                        linkedin
-                    </a>
-                </li>
-            </ul>
+            <nav class="flex gap-x-2 mt-10">
+                <Sociales href="https://linkedin.com/in/maxich/">
+                    <LinkedIn class="w-6 h-6" />LinkedIn
+                </Sociales>
+
+                <Sociales href="https://github.com/maxich">
+                    Github
+                    <Github class="w-6 h-6" />
+                </Sociales>
+
+                <Sociales href="mailto:maxivitale@icloud.com">
+                    <Mail class="w-6 h-6" />
+                    maxivitale@icloud.com
+                </Sociales>
+            </nav>
         </section>
     </main>
 </Layout>
