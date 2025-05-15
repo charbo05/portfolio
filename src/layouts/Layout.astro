@@ -1,0 +1,65 @@
+---
+import "./src/styles/global.css";
+import Header from "../components/Header.astro";
+// Supports weights 100-900
+import "@fontsource-variable/onest";
+
+interface Props {
+	// The slot is the content that will be passed to the layout
+	// This is a special prop that Astro uses to render the content of the page
+	// You can use it to pass any content you want to the layout
+	// For example, you can pass a component
+	title: string;
+	description: string
+	}
+const { description, title } = Astro.props;
+// This is the layout component that will be used to wrap all the pages
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title> {title} </title>
+	</head>
+	<body  >
+		<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+		<Header />
+		<slot />
+		<div />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		color-scheme: light dark; /*defino los colores que soportaria el navegador*/
+	}
+
+	html {
+		font-family:,"onest-variable", system-ui, sans-serif;
+		 scroll-behavior: smooth;
+	}
+	body {
+		/* background: #050505; */
+		display: flex;
+		flex-direction: column;
+		
+		height: 100vh;
+	}
+
+	p{
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		color: #fff;
+		
+		
+		
+	}
+
+
+
+</style>

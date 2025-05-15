@@ -1,0 +1,253 @@
+---
+import Badge from "../components/Badge.astro";
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+import LinkedIn from "../iconos/LinkedIn.astro";
+import Github from "../iconos/Github.astro";
+import Sociales from "../iconos/Sociales.astro";
+import Mail from "../iconos/Mail.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout
+    title=" Portfolio de Christian -Desarrollador, Programador Analista en TI"
+    description="Portfolio de Christian -Desarrollador, Programador Analista en TI"
+>
+    <main>
+        <section
+            class="flex flex-col items-center justify-center h-[calc(100vh-95px)] pt-[90px 0px] text-white text-center px-4"
+        >
+            <h1
+                class="text-4xl font-bold text-white text-5xl flex justify-center items-center flex-row gap-x-4"
+            >
+                Hola!! Soy Christian <a
+                    href="https://www.linkedin.com/in/maxich/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex justify-center items-center items-center flex row gap-2"
+                >
+                    <Badge>Escucho Ofertas de trabajo</Badge>
+                </a>
+            </h1>
+            <h2 class="text-2xl text-wrap">
+                <span>Analista en Tecnologías de la Información</span>
+                <span class="opacity-80 text-red-200/90">
+                    ORT Uruguay. De Uruguay, Montevideo.
+                </span>
+                <span class="text-yellow-200/90">
+                    Trabajo en soluciones de software.
+                </span>
+            </h2>
+            <nav class="flex gap-x-2 mt-10">
+                <Sociales href="https://linkedin.com/in/maxich/">
+                    <LinkedIn class="w-6 h-6" />LinkedIn
+                </Sociales>
+
+                <Sociales href="https://github.com/maxich">
+                    Github
+                    <Github class="w-6 h-6" />
+                </Sociales>
+
+                <Sociales href="mailto:maxivitale@icloud.com"
+                    ><!-- mailito para poder redirigir a que me envien un mail  -->
+                    <Mail class="w-6 h-6" />
+                    maxivitale@icloud.com
+                </Sociales>
+            </nav>
+        </section>
+
+        <!-- Sección About -->
+        <section
+            id="about"
+            class="relative min-h-screen bg-gradient-to-br from-black via-purple-900 to-black text-white px-6 py-24 overflow-hidden"
+        >
+            <!-- Emojis de fondo -->
+            <div
+                class="absolute inset-0 text-[8rem] opacity-10 select-none pointer-events-none flex justify-center items-center"
+            >
+                💻⚙️📚🧠
+            </div>
+
+            <div class="relative max-w-5xl mx-auto z-10">
+                <h2
+                    class="text-5xl font-extrabold text-center text-indigo-300 mb-12 drop-shadow"
+                >
+                    👨‍💻 Sobre mí
+                </h2>
+
+                <!-- Estudios -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold text-pink-400 mb-3">
+                        🎓 Estudios
+                    </h3>
+                    <p class="text-lg leading-relaxed text-gray-200">
+                        Soy <span class="text-white font-semibold"
+                            >Analista en Tecnologías de la Información</span
+                        >, actualmente cursando en la <span
+                            class="text-indigo-300"
+                            >Universidad ORT Uruguay</span
+                        >. Mi formación combina programación, bases de datos,
+                        arquitectura de software y metodologías ágiles.
+                    </p>
+                </div>
+
+                <!-- Experiencia -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold text-pink-400 mb-3">
+                        💼 Experiencia
+                    </h3>
+                    <p class="text-lg leading-relaxed text-gray-200">
+                        He liderado y colaborado en proyectos web tanto <span
+                            class="text-white font-semibold"
+                            >académicos como personales</span
+                        >, aplicando tecnologías modernas y buenas prácticas.
+                        Además, tengo experiencia laboral en <span
+                            class="text-white font-semibold"
+                            >atención al cliente, ventas y coordinación de
+                            equipos</span
+                        >.
+                    </p>
+                </div>
+
+                <!-- Conocimientos Técnicos -->
+                <div>
+                    <h3 class="text-3xl font-bold text-pink-400 mb-3">
+                        🛠️ Conocimientos Técnicos
+                    </h3>
+                    <ul
+                        class="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg text-gray-200"
+                    >
+                        <li>✨ HTML, CSS, JS, TS</li>
+                        <li>⚛️ React, Astro, Tailwind</li>
+                        <li>🧩 Java, C#, SQL/NoSQL</li>
+                        <li>🔗 Git & GitHub</li>
+                        <li>📱 Diseño responsivo</li>
+                        <li>🎨 UX/UI Fundamentals</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section
+            id="projects"
+            class="flex flex-col items-center justify-center h-[calc(100vh-95px)] pt-[90px 0px] text-white text-center px-4 bg-gradient-to-br from-black via-blue-900 to-black"
+        >
+            <h2 class="text-4xl font-bold text-white mb-10 text-center">
+                🚀 Proyectos Destacados
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Proyecto 1 -->
+                <div
+                    class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition content-center"
+                >
+                    <h3 class="text-2xl font-semibold text-indigo-400 mb-2">
+                        📚 Gestión Bibliotecaria
+                    </h3>
+                    <p class="text-gray-300 mb-2">
+                        Sistema completo para administración de bibliotecas:
+                        estudiantes, libros, préstamos, devoluciones y reportes.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >Java</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >POO</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >Estructuras de Datos</span
+                        >
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div
+                    class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition"
+                >
+                    <h3 class="text-2xl font-semibold text-indigo-400 mb-2">
+                        🗺️ App de Eventos y Plazas
+                    </h3>
+                    <p class="text-gray-300 mb-2">
+                        Web interactiva con mapa que muestra eventos y espacios
+                        públicos usando datos del backend.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >React</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >Leaflet</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >Node.js</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >REST API</span
+                        >
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div
+                    class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition"
+                >
+                    <h3 class="text-2xl font-semibold text-indigo-400 mb-2">
+                        🌊 Conciencia Marina
+                    </h3>
+                    <p class="text-gray-300 mb-2">
+                        Proyecto académico desarrollado durante el 2º y 3º
+                        semestre de la carrera. Utiliza C# con arquitectura MVC
+                        orientada a objetos, y busca concientizar sobre la
+                        importancia de las especies marinas y la protección de
+                        los océanos.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >C#</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >MVC</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >POO</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >SQL Server</span
+                        >
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div
+                    class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition"
+                >
+                    <h3 class="text-2xl font-semibold text-indigo-400 mb-2">
+                        🗓️ Web de Reservas Multiplataforma
+                    </h3>
+                    <p class="text-gray-300 mb-2">
+                        Proyecto académico del primer semestre. Desarrollé una
+                        web de reservas para restaurantes, teatros, cines y
+                        otros eventos. Enfocado en una experiencia de usuario
+                        clara, login, validaciones de formularios y estructura
+                        modular.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >HTML</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >CSS</span
+                        >
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-sm"
+                            >JavaScript</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>
