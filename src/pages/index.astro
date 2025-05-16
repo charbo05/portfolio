@@ -70,23 +70,25 @@ import Mail from "../iconos/Mail.astro";
                 💻⚙️📚🧠
             </div>
 
-            <div class="relative max-w-5xl mx-auto z-10">
+            <div class="relative max-w-5xl mx-auto z-10 text-center">
                 <h2
-                    class="text-5xl font-extrabold text-center text-indigo-300 mb-12 drop-shadow"
+                    class="text-6xl font-extrabold text-center text-indigo-300 mb-16 drop-shadow-lg"
                 >
                     👨‍💻 Sobre mí
                 </h2>
 
                 <!-- Estudios -->
-                <div class="mb-12">
-                    <h3 class="text-3xl font-bold text-pink-400 mb-3">
+                <div class="mb-16">
+                    <h3 class="text-4xl font-bold text-pink-400 mb-4">
                         🎓 Estudios
                     </h3>
-                    <p class="text-lg leading-relaxed text-gray-200">
-                        Soy <span class="text-white font-semibold"
+                    <p
+                        class="text-xl leading-relaxed text-gray-100 font-medium"
+                    >
+                        Soy <span class="text-white font-bold"
                             >Analista en Tecnologías de la Información</span
                         >, actualmente cursando en la <span
-                            class="text-indigo-300"
+                            class="text-indigo-300 font-semibold"
                             >Universidad ORT Uruguay</span
                         >. Mi formación combina programación, bases de datos,
                         arquitectura de software y metodologías ágiles.
@@ -94,17 +96,19 @@ import Mail from "../iconos/Mail.astro";
                 </div>
 
                 <!-- Experiencia -->
-                <div class="mb-12">
-                    <h3 class="text-3xl font-bold text-pink-400 mb-3">
+                <div class="mb-16">
+                    <h3 class="text-4xl font-bold text-pink-400 mb-4">
                         💼 Experiencia
                     </h3>
-                    <p class="text-lg leading-relaxed text-gray-200">
+                    <p
+                        class="text-xl leading-relaxed text-gray-100 font-medium"
+                    >
                         He liderado y colaborado en proyectos web tanto <span
-                            class="text-white font-semibold"
+                            class="text-white font-bold"
                             >académicos como personales</span
                         >, aplicando tecnologías modernas y buenas prácticas.
                         Además, tengo experiencia laboral en <span
-                            class="text-white font-semibold"
+                            class="text-white font-bold"
                             >atención al cliente, ventas y coordinación de
                             equipos</span
                         >.
@@ -113,11 +117,11 @@ import Mail from "../iconos/Mail.astro";
 
                 <!-- Conocimientos Técnicos -->
                 <div>
-                    <h3 class="text-3xl font-bold text-pink-400 mb-3">
+                    <h3 class="text-4xl font-bold text-pink-400 mb-4">
                         🛠️ Conocimientos Técnicos
                     </h3>
                     <ul
-                        class="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg text-gray-200"
+                        class="grid grid-cols-2 md:grid-cols-3 gap-4 text-xl text-gray-100 font-medium"
                     >
                         <li>✨ HTML, CSS, JS, TS</li>
                         <li>⚛️ React, Astro, Tailwind</li>
@@ -247,6 +251,22 @@ import Mail from "../iconos/Mail.astro";
                         >
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Sección Contacto -->
+        <section id="contact" class="py-12 px-4 bg-gray-900 text-white">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">📬 Contacto</h2>
+                <p class="text-gray-300 mb-6">
+                    ¿Te interesa colaborar o tenés alguna consulta? Escribime un
+                    mensaje o contactame por redes.
+                </p>
+                <a
+                    href="mailto:maxivitale@icloud.com"
+                    class="inline-block bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-xl text-white font-semibold transition"
+                >
+                    Enviar correo
+                </a>
             </div>
         </section>
     </main>
